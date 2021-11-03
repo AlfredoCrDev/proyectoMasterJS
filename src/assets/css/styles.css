@@ -88,7 +88,8 @@ header #logo a:hover{
 /*Contenedor Principal*/
 
 #content{
-    min-height: 500px;
+    min-height: 600px;
+    height: auto;
     width: 75%;
     margin: 0px auto;
     box-shadow: 0px 0px 40px black;
@@ -156,6 +157,21 @@ article.about{
     padding-top: 10px;
 }
 
+.container .image{
+    float: left;
+    width: 47%;
+}
+
+.container .image img{
+    width: 100%;
+}
+
+.container .data{
+    float: left;
+    width: 49%;
+    margin-left: 30px;
+}
+
 .container h2{
     display: block;
     border-bottom: 1px solid #ccc;
@@ -180,7 +196,7 @@ form textarea{
 }
 
 form button,
-form input[type="submit"]{
+form input[type="submit"], .button-edit, .button-delete{
     display: block;
     font-size: 17px;
     padding: 10px;
@@ -189,6 +205,22 @@ form input[type="submit"]{
     background: rgba(53, 103, 164, 1);
     border: 1px solid rgba(13, 67, 133, 1);
     cursor: pointer;
+}
+
+.button-edit, .button-delete{
+    width: 20%;
+    float: left;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.button-edit{
+    border: none;
+}
+
+.button-delete{
+    background-color: red;
+    border: none;
 }
 
 form button:hover,
@@ -230,4 +262,32 @@ form input[disabled]{
 .failed{
     background: red;
     color: white;
+}
+
+/*Pagina de Proyectos*/
+
+.project{
+    list-style: none;
+    display: block;
+    float: left;
+    width: 28%;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.project .image{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.project img{
+    width: 100%;
+}
+
+.project a{
+    text-decoration: none;
+    color: black;
 }
